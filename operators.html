@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <h2>JavaScript Operators</h2>
+    <p>
+        The + operator concatenates (adds) strings
+    </p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script>
+        var txt1="What a very";
+        var txt2="nice day";
+        document.getElementById("demo").innerHTML=txt1 +" "+ txt2;
+        let text1= "Have a";
+        text1+=" nice day";
+        document.getElementById("demo1").innerHTML= text1;
+        // Adding numbers and String //
+        let x=5+5;
+        let y="4"+3;
+        let z="Hai"+6;
+        document.getElementById("demo2").innerHTML=x+"<br>"+ y + "<br>" + z;
+        // Array index are zero based.//
+        const cars=["abniu","volovo","BMW"]
+        document.getElementById("demo3").innerHTML=cars[2];
+        //object datatypes//
+        const person={
+            firstName : "Johnsmith",
+            lastName : "Deo",
+            age :45,
+            eyecolor : "red"
+        };
+        document.getElementById("demo4").innerHTML=person.firstName+" " + "is" + " "+
+        person.age +" "+ "years old";
+    </script>
+    </body>
+</html>
